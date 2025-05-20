@@ -295,3 +295,31 @@ button {
   color: #333;
   line-height: 1.8;
 }
+
+/* ========== PROFILE PAGE ========== */
+
+.profile {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6f42c1;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
