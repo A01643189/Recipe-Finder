@@ -506,3 +506,91 @@ button {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+.dashboard-subtitle {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  color: #333;
+}
+
+/* ========== SAVE BUTTONS ========== */
+.save-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.save-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #0077cc;
+  background-color: transparent;
+  color: #0077cc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: #0077cc;
+  color: white;
+}
+
+.save-button:disabled {
+  background-color: #0077cc;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* ========== REVIEW FORM ========== */
+.review-form {
+  margin-top: 2rem;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.review-submit-button {
+  margin-top: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.review-submit-button:hover {
+  background-color: #218838;
+}
+
+/* ========== REVIEW LIST ========== */
+.review-list {
+  margin-top: 2rem;
+}
+
+.review-list h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.review-list ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.review-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}

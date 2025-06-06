@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchRecipeById } from "../services/api";
 import type { Recipe } from "../types/recipe";
+import SaveButtons from "../components/SaveButtons";
+import ReviewForm from "../components/ReviewForm";
+import ReviewList from "../components/ReviewList";
 
 export default function RecipeDetails() {
   const { id } = useParams();
@@ -36,6 +39,9 @@ export default function RecipeDetails() {
           />
         </>
       )}
+      <SaveButtons recipeId={recipe.id.toString()} />
+      <ReviewForm recipeId={recipe.id.toString()} />
+      <ReviewList recipeId={recipe.id.toString()} />
     </div>
   );
 }
